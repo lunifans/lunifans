@@ -11,7 +11,7 @@ categories: AG
 
 # ①  一点处的切空间
 
-我们假设 $V$ 是 $\mathbb{A}^n$ 中包含原点的 Zariski 闭子集。我们来考虑 $\mathbb{A}^n$ 中的过原点的直线 $l=\{(t a_1,\dots,t a_n)|t\in \mathbb{C}\}$. 我们来考虑什么时候直线 $l$ 与 $V$ 在原点处相切？
+我们假设 $V$ 是 $\mathbb{A}^n$ 中包含原点的 Zariski 闭子集。我们来考虑 $\mathbb{A}^n$ 中的过原点的直线 $l=\{(t a_1,\dots,t a_n) | t\in \mathbb{C}\}$. 我们来考虑什么时候直线 $l$ 与 $V$ 在原点处相切？
 
 设 $F_1,\dots, F_r$ 是 $\mathbb{I}(V)$ 的生成元。那么 $V$ 和 $l$ 的交点为以下方程组的根
 $$
@@ -26,4 +26,6 @@ $$
 \min \{F_i(ta_1,\dots,ta_n)\ \text{在 $t=0$ 处的零点的重数}\ | i = 1,2,3,\dots, r\}
 $$
 
-\textbf{定义} 我们称直线 $l = \left(t(a_1 -p_1),t(a_2-p_2),\dots, t(a_n-p_n)\right)$ 和包含 $p=(p_1,\dots,p_n)$ 的 Zariski 闭子集 $V$ 在 $p$ 处相切，如果 $V\cap l$ 在 $p$ 处的重数为 $m>1$. 此时我们称 $l$ 与 $V$ 是 tangent of order $n-1$ 的。
+**定义（相切）** 我们称直线 $l = \left(t(a_1 -p_1),t(a_2-p_2),\dots, t(a_n-p_n)\right)$ 和包含 $p=(p_1,\dots,p_n)$ 的 Zariski 闭子集 $V$ 在 $p$ 处相切，如果 $V\cap l$ 在 $p$ 处的重数为 $m>1$. 此时我们称 $l$ 与 $V$ 是 tangent of order $m-1$ 的。
+
+**定义（$p$ 点处的切空间）** 我们将所有与 $V$ 在 $p$ 点处相切的直线上的点并起来得到一个空间 $T_pV$, 即 $$T_p V = \bigcup_{l\ \text{与 $V$ 在\ $p$\ 相切}} l$$
