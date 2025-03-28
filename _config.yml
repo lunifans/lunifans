@@ -4,9 +4,9 @@ email: lunifans@outlook.com
 description: > # this means to ignore newlines until "twitter_username:"
   Lunifans Lee's personal blog site.
 # social links
-twitter_username: jekyllrb
-github_username:  jekyll
-rss: rss
+twitter_username: lunifanslee
+github_username:  lunifans
+# rss: rss
 # dribbble_username: jekyll
 # facebook_username: jekyll
 # flickr_username: jekyll
@@ -23,6 +23,8 @@ rss: rss
 # - username: jekyll2
 #   instance: example.com
 
+kramdown:
+  math_engine: null
 
 show_excerpts: false # set to true to show excerpts on the homepage
 

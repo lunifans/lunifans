@@ -27,4 +27,9 @@
       </nav>
     {%- endif -%}
   </div>
+
+
+{% unless page.no_latex %}
+        {% include latex.html %}
+    {% endunless %}
 </header>
