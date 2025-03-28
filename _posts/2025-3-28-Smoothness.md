@@ -29,3 +29,14 @@ $$
 **定义（相切）** 我们称直线 $l = \left(t(a_1 -p_1),t(a_2-p_2),\dots, t(a_n-p_n)\right)$ 和包含 $p=(p_1,\dots,p_n)$ 的 Zariski 闭子集 $V$ 在 $p$ 处相切，如果 $V\cap l$ 在 $p$ 处的重数为 $m>1$. 此时我们称 $l$ 与 $V$ 是 tangent of order $m-1$ 的。
 
 **定义（$p$ 点处的切空间）** 我们将所有与 $V$ 在 $p$ 点处相切的直线上的点并起来得到一个空间 $T_pV$, 即 $$T_p V = \bigcup_{l\ \text{与 $V$ 在\ $p$\ 相切}} l$$
+
+**例子** 设 $V= \mathbb{V}(y-x^2) \subseteq \mathbb{A}^2$, 我们来看零点处的切空间。设过零点的一条直线为 $l=(ta,tb),a,b\in \mathbb{C}$. $$tb = t^2 a^2.$$ 当 $b\neq 0$ 时, $V\cap l$ 在原点的重数为 $1$, 所以不相切。当 $b=0$ 时，$V\cap l$ 的重数为 $2$, 此时 $l$ 与 $V$ 相切。所以 $T_0V = x$ 轴.
+
+![示意图](Images\Smooth6.2.png)
+
+我们来看更多的例子。
+
+**例子** 设 $V = \mathbb{V}(y^2-x^2-x^3)\subseteq \mathbb{A}^2$, 我们来研究其在原点处的切空间。设过原点的直线为 $l=(ta,ta),a,b\in \mathbb{C}$, $$ t^2 a^2 = t^2 b^2 +t^3b^3.$$ 所以 $V\cap l$ 在 $0$ 处的重数至少为 $2$. 因此任一条过原点的直线都与 $V$ 相切，$T_0V = \mathbb{A}^2$.
+
+**定理** 设 $V = \mathbb{V}(F_1,\dots,F_r) \subseteq \mathbb{A}^n$, $p\in V$. 那么 $V$ 在 $p$ 点的切空间为 $$T_pV = \mathbb{V}\left( \mathrm{d}F_1(x-p),\dots,\mathrm{d}F_r(x-p) \right)$$
+其中 $\mathrm{d}F_i(x-p)$ 为 $$\sum_{j=1}^r\frac{\partial F_i}{\partial x_j}(p)(x_j - p_j)$$.
